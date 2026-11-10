@@ -1,0 +1,125 @@
+{
+    "baseline": {
+        "accuracy": 0.7856635911994322,
+        "recall": 0.4919786096256685,
+        "precision": 0.6216216216216216,
+        "f1": 0.5492537313432836,
+        "roc_auc": 0.8242204655248134,
+        "confusion_matrix": [
+            [
+                923,
+                112
+            ],
+            [
+                190,
+                184
+            ]
+        ]
+    },
+    "random_search_best": {
+        "score": 0.8160535117056856,
+        "params": {
+            "classifier__n_estimators": 200,
+            "classifier__min_samples_split": 20,
+            "classifier__min_samples_leaf": 1,
+            "classifier__max_features": "log2",
+            "classifier__max_depth": 4,
+            "classifier__class_weight": "balanced"
+        }
+    },
+    "grid_search_best": {
+        "score": 0.8347826086956521,
+        "params": {
+            "classifier__class_weight": "balanced",
+            "classifier__max_depth": 3,
+            "classifier__max_features": "log2",
+            "classifier__min_samples_leaf": 1,
+            "classifier__min_samples_split": 20,
+            "classifier__n_estimators": 250
+        }
+    },
+    "top_candidates": [
+        {
+            "params": {
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 3,
+                "classifier__max_features": "log2",
+                "classifier__min_samples_leaf": 1,
+                "classifier__min_samples_split": 20,
+                "classifier__n_estimators": 250
+            },
+            "mean_test_score": 0.8347826086956521,
+            "std_test_score": 0.03148789911957141,
+            "rank_test_score": 1
+        },
+        {
+            "params": {
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 3,
+                "classifier__max_features": "log2",
+                "classifier__min_samples_leaf": 1,
+                "classifier__min_samples_split": 10,
+                "classifier__n_estimators": 250
+            },
+            "mean_test_score": 0.8347826086956521,
+            "std_test_score": 0.03148789911957141,
+            "rank_test_score": 1
+        },
+        {
+            "params": {
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 3,
+                "classifier__max_features": "log2",
+                "classifier__min_samples_leaf": 4,
+                "classifier__min_samples_split": 10,
+                "classifier__n_estimators": 250
+            },
+            "mean_test_score": 0.8347826086956521,
+            "std_test_score": 0.03148789911957141,
+            "rank_test_score": 1
+        },
+        {
+            "params": {
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 3,
+                "classifier__max_features": "log2",
+                "classifier__min_samples_leaf": 4,
+                "classifier__min_samples_split": 20,
+                "classifier__n_estimators": 250
+            },
+            "mean_test_score": 0.8347826086956521,
+            "std_test_score": 0.03148789911957141,
+            "rank_test_score": 1
+        },
+        {
+            "params": {
+                "classifier__class_weight": "balanced",
+                "classifier__max_depth": 3,
+                "classifier__max_features": "log2",
+                "classifier__min_samples_leaf": 1,
+                "classifier__min_samples_split": 10,
+                "classifier__n_estimators": 150
+            },
+            "mean_test_score": 0.8307692307692308,
+            "std_test_score": 0.030107765712178974,
+            "rank_test_score": 5
+        }
+    ],
+    "final_model_test": {
+        "accuracy": 0.7139815471965933,
+        "recall": 0.8288770053475936,
+        "precision": 0.4776579352850539,
+        "f1": 0.6060606060606061,
+        "roc_auc": 0.8310108760236637,
+        "confusion_matrix": [
+            [
+                696,
+                339
+            ],
+            [
+                64,
+                310
+            ]
+        ]
+    }
+}
